@@ -1,11 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, Alert } from 'react-native';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => Alert.alert('Happy Mothers Day', 'From Up on the Mountain')}
+        >
           <Image
             source={{uri: 'https://s-media-cache-ak0.pinimg.com/236x/b1/5e/12/b15e12194f2e52530ab9f058f84dbf25.jpg'}}
             style={{
